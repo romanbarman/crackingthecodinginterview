@@ -10,7 +10,8 @@ namespace QuestionRunner
         {
             var chapter01Questions = new IQuestion[]
             {
-                new Q1_01_Is_Unique()
+                new Q1_01_Is_Unique(),
+                new Q1_02_Check_Permutation()
             };
 
             foreach (var question in chapter01Questions)
