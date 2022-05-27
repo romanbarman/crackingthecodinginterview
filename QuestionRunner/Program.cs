@@ -12,7 +12,8 @@ namespace QuestionRunner
             {
                 new Q1_01_Is_Unique(),
                 new Q1_02_Check_Permutation(),
-                new Q1_03_URLify()
+                new Q1_03_URLify(),
+                new Q1_04_Palindrome_Permutation()
             };
 
             foreach (var question in chapter01Questions)
@@ -22,6 +23,7 @@ namespace QuestionRunner
                 question.Run();
 
                 Console.WriteLine(new string('-', 120));
+                Console.WriteLine();
             }
         }
     }
