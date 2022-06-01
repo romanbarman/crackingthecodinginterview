@@ -13,7 +13,8 @@ namespace QuestionRunner
                 new Q1_01_Is_Unique(),
                 new Q1_02_Check_Permutation(),
                 new Q1_03_URLify(),
-                new Q1_04_Palindrome_Permutation()
+                new Q1_04_Palindrome_Permutation(),
+                new Q1_05_One_Away_A()
             };
 
             foreach (var question in chapter01Questions)
