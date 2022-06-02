@@ -17,7 +17,8 @@ namespace QuestionRunner
                 new Q1_05_One_Away_A(),
                 new Q1_06_String_Compression(),
                 new Q1_07_Rotate_Matrix(),
-                new Q1_08_Zero_Matrix()
+                new Q1_08_Zero_Matrix(),
+                new Q1_09_String_Rotation()
             };
 
             foreach (var question in chapter01Questions)
