@@ -20,7 +20,8 @@ namespace QuestionRunner
                 new Q1_07_Rotate_Matrix(),
                 new Q1_08_Zero_Matrix(),
                 new Q1_09_String_Rotation(),
-                new Q2_01_Remove_Dups()
+                new Q2_01_Remove_Dups(),
+                new Q2_02_Return_Kth_To_Last(),
             };
 
             foreach (var question in questions)

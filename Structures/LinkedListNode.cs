@@ -1,4 +1,6 @@
-﻿namespace Structures
+﻿using System;
+
+namespace Structures
 {
     public class LinkedListNode<T>
     {
@@ -23,6 +25,37 @@
         public void SetPrev(LinkedListNode<T> prev)
         {
             this.prev = prev;
+        }
+
+        public void Show()
+        {
+            Console.Write($"{Value} ");
+
+            var current = Next;
+            while (current != null)
+            {
+                Console.Write($"{current.Value} ");
+                current = current.Next;
+            }
+        }
+
+        public static LinkedListNode<int> CreateLinkedList(int min, int max, int count)
+        {
+            var rand = new Random();
+
+            var top = new LinkedListNode<int>(rand.Next(min, max));
+            var current = top;
+
+            for (var i = 0; i < count - 1; i++)
+            {
+                var newNode = new LinkedListNode<int>(rand.Next(min, max));
+                current.SetNext(newNode);
+                newNode.SetPrev(current);
+
+                current = newNode;
+            }
+
+            return top;
         }
     }
 }

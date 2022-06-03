@@ -6,6 +6,10 @@ namespace Chapter02
 {
     public class Q2_01_Remove_Dups : IQuestion
     {
+        private const int Min = 0;
+        private const int Max = 5;
+        private const int Count = 20;
+
         public string GetDescription()
         {
             return "Write code to remove duplicates from an unsorted linked list.";
@@ -13,18 +17,18 @@ namespace Chapter02
 
         public void Run()
         {
-            var linkedList = CreateLinkedList();
-            ShowLinkedList(linkedList);
+            var linkedList = Structures.LinkedListNode<int>.CreateLinkedList(Min, Max, Count);
+            linkedList.Show();
             Console.Write(": DeleteDublicates -> ");
             DeleteDublicates(linkedList);
-            ShowLinkedList(linkedList);
+            linkedList.Show();
             Console.WriteLine();
 
-            linkedList = CreateLinkedList();
-            ShowLinkedList(linkedList);
+            linkedList = Structures.LinkedListNode<int>.CreateLinkedList(Min, Max, Count);
+            linkedList.Show();
             Console.Write(": DeleteDublicates2 -> ");
             DeleteDublicates2(linkedList);
-            ShowLinkedList(linkedList);
+            linkedList.Show();
             Console.WriteLine();
         }
 
@@ -70,37 +74,6 @@ namespace Chapter02
                     current = current.Next;
                 }
             }
-        }
-
-        private void ShowLinkedList(Structures.LinkedListNode<int> top)
-        {
-            var current = top;
-            while(current != null)
-            {
-                Console.Write($"{current.Value} ");
-                current = current.Next;
-            }
-        }
-
-        private Structures.LinkedListNode<int> CreateLinkedList()
-        {
-            var rand = new Random();
-            const int Min = 0;
-            const int Max = 5;
-
-            var top = new Structures.LinkedListNode<int>(rand.Next(Min, Max));
-            var current = top;
-
-            for (var i = 0; i < 20; i++)
-            {
-                var newNode = new Structures.LinkedListNode<int>(rand.Next(Min, Max));
-                current.SetNext(newNode);
-                newNode.SetPrev(current);
-
-                current = newNode;
-            }
-
-            return top;
         }
     }
 }
