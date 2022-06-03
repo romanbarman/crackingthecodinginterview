@@ -4,7 +4,7 @@ namespace Structures
 {
     public class LinkedListNode<T>
     {
-        private readonly T value;
+        private T value;
         private LinkedListNode<T> next;
         private LinkedListNode<T> prev;
 
@@ -25,6 +25,11 @@ namespace Structures
         public void SetPrev(LinkedListNode<T> prev)
         {
             this.prev = prev;
+        }
+
+        public void SetValue(T value)
+        {
+            this.value = value;
         }
 
         public void Show()
