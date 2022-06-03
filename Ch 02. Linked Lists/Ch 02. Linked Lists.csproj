@@ -1,14 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Ch_02._Linked_Lists</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ch 01. Arrays and Strings\Ch 01. Arrays and Strings.csproj" />
-    <ProjectReference Include="..\Ch 02. Linked Lists\Ch 02. Linked Lists.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\Structures\Structures.csproj" />
   </ItemGroup>
 
 </Project>
