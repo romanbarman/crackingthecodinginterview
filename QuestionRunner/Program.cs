@@ -24,7 +24,8 @@ namespace QuestionRunner
                 new Q2_02_Return_Kth_To_Last(),
                 new Q2_03_Delete_Middle_Node(),
                 new Q2_04_Partition(),
-                new Q2_05_Sum_Lists()
+                new Q2_05_Sum_Lists(),
+                new Q2_06_Palindrome()
             };
 
             foreach (var question in questions)

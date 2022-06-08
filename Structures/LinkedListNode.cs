@@ -63,14 +63,14 @@ namespace Structures
             return top;
         }
 
-        public static LinkedListNode<int> CreateLinkedList(int[] array)
+        public static LinkedListNode<T> CreateLinkedList(T[] array)
         {
-            var top = new LinkedListNode<int>(array[0]);
+            var top = new LinkedListNode<T>(array[0]);
             var current = top;
 
             for (var i = 1; i < array.Length; i++)
             {
-                var newNode = new LinkedListNode<int>(array[i]);
+                var newNode = new LinkedListNode<T>(array[i]);
                 current.SetNext(newNode);
                 newNode.SetPrev(current);
 
