@@ -1,7 +1,10 @@
 ﻿using Chapter01;
 using Chapter02;
 using Contracts;
+using QuestionRunner.Commands;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace QuestionRunner
 {
@@ -9,33 +12,46 @@ namespace QuestionRunner
     {
         static void Main(string[] args)
         {
-            var questions = new IQuestion[]
+            var commands = new ICommand[]
             {
-                new Q1_01_Is_Unique(),
-                new Q1_02_Check_Permutation(),
-                new Q1_03_URLify(),
-                new Q1_04_Palindrome_Permutation(),
-                new Q1_05_One_Away_A(),
-                new Q1_06_String_Compression(),
-                new Q1_07_Rotate_Matrix(),
-                new Q1_08_Zero_Matrix(),
-                new Q1_09_String_Rotation(),
-                new Q2_01_Remove_Dups(),
-                new Q2_02_Return_Kth_To_Last(),
-                new Q2_03_Delete_Middle_Node(),
-                new Q2_04_Partition(),
-                new Q2_05_Sum_Lists(),
-                new Q2_06_Palindrome()
+                new RunChapterCommand(1, "Ch 01. Arrays and Strings", typeof(Q1_01_Is_Unique)),
+                new RunChapterCommand(2, "Ch 02. Linked Lists", typeof(Q2_01_Remove_Dups)),
+                new ExitCommand(3)
             };
 
-            foreach (var question in questions)
+            while (true)
             {
-                Console.WriteLine(question.GetDescription());
-                Console.WriteLine();
-                question.Run();
+                Console.Clear();
+                ShowCommands(commands);
 
-                Console.WriteLine(new string('-', 120));
-                Console.WriteLine();
+                var inputCommand = Console.ReadLine();
+
+                int commandNumber;
+                if (!int.TryParse(inputCommand, out commandNumber))
+                {
+                    Console.WriteLine("Invalid command format!");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                var command = commands.FirstOrDefault(c => c.CommandNumber == commandNumber);
+
+                if (command == null)
+                {
+                    Console.WriteLine("Invalid command!");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                command.Run();
+            }
+        }
+
+        private static void ShowCommands(IEnumerable<ICommand> commands)
+        {
+            foreach (var command in commands)
+            {
+                Console.WriteLine($"{command.CommandNumber}. {command.Title}");
             }
         }
     }
