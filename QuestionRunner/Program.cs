@@ -23,7 +23,8 @@ namespace QuestionRunner
                 new Q2_01_Remove_Dups(),
                 new Q2_02_Return_Kth_To_Last(),
                 new Q2_03_Delete_Middle_Node(),
-                new Q2_04_Partition()
+                new Q2_04_Partition(),
+                new Q2_05_Sum_Lists()
             };
 
             foreach (var question in questions)
