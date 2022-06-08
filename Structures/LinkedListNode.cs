@@ -62,5 +62,22 @@ namespace Structures
 
             return top;
         }
+
+        public static LinkedListNode<int> CreateLinkedList(int[] array)
+        {
+            var top = new LinkedListNode<int>(array[0]);
+            var current = top;
+
+            for (var i = 1; i < array.Length; i++)
+            {
+                var newNode = new LinkedListNode<int>(array[i]);
+                current.SetNext(newNode);
+                newNode.SetPrev(current);
+
+                current = newNode;
+            }
+
+            return top;
+        }
     }
 }
