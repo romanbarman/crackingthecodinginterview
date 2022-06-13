@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuestionRunner", "QuestionRunner\QuestionRunner.csproj", "{83335111-818B-40E3-9B03-29FE6F932400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch 02. Linked Lists", "Ch 02. Linked Lists\Ch 02. Linked Lists.csproj", "{324A64CF-8971-4E7D-9C02-591B4FC8EE46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch 02. Linked Lists", "Ch 02. Linked Lists\Ch 02. Linked Lists.csproj", "{324A64CF-8971-4E7D-9C02-591B4FC8EE46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures", "Structures\Structures.csproj", "{7B8BE7D0-E10D-44DE-BF9D-DB2248890736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structures", "Structures\Structures.csproj", "{7B8BE7D0-E10D-44DE-BF9D-DB2248890736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch 03. Stack and Queue", "Ch 03. Stack and Queue\Ch 03. Stack and Queue.csproj", "{4416B2DE-1AF9-488C-B122-388CA035A2FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7B8BE7D0-E10D-44DE-BF9D-DB2248890736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B8BE7D0-E10D-44DE-BF9D-DB2248890736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B8BE7D0-E10D-44DE-BF9D-DB2248890736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4416B2DE-1AF9-488C-B122-388CA035A2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4416B2DE-1AF9-488C-B122-388CA035A2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4416B2DE-1AF9-488C-B122-388CA035A2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4416B2DE-1AF9-488C-B122-388CA035A2FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

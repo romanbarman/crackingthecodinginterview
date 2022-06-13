@@ -1,5 +1,6 @@
 ﻿using Chapter01;
 using Chapter02;
+using Chapter03;
 using Contracts;
 using QuestionRunner.Commands;
 using System;
@@ -16,7 +17,8 @@ namespace QuestionRunner
             {
                 new RunChapterCommand(1, "Ch 01. Arrays and Strings", typeof(Q1_01_Is_Unique)),
                 new RunChapterCommand(2, "Ch 02. Linked Lists", typeof(Q2_01_Remove_Dups)),
-                new ExitCommand(3)
+                new RunChapterCommand(3, "Ch 03. Stack and Queue", typeof(Q3_01_Array_3_Stack)),
+                new ExitCommand(4)
             };
 
             while (true)
