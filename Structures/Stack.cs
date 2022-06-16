@@ -51,5 +51,15 @@ namespace Structures
         {
             return top == null;
         }
+
+        public void Show()
+        {
+            var current = top;
+            while (current != null)
+            {
+                Console.Write($"{current.Value} ");
+                current = current.Next;
+            }
+        }
     }
 }
