@@ -12,6 +12,8 @@ namespace Contracts
             var solutions = GetSolutions();
             if (solutions.Count == 1)
             {
+                Console.WriteLine("Solution");
+
                 RunSolution(solutions[0]);
             }
             else
