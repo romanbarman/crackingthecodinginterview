@@ -2,7 +2,7 @@
 
 namespace Structures
 {
-    public class BinaryTree<T> where T : IComparable<T>
+    public class BinaryTreeSearch<T> where T : IComparable<T>
     {
         public class Node
         {

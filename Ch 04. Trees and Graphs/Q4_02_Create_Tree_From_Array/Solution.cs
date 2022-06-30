@@ -28,7 +28,7 @@ namespace Chapter04.CreateTreeFromArray
             ShowTree(tree.Root);
         }
 
-        private void ShowTree(BinaryTree<int>.Node node)
+        private void ShowTree(BinaryTreeSearch<int>.Node node)
         {
             if (node == null)
             {
@@ -45,9 +45,9 @@ namespace Chapter04.CreateTreeFromArray
             ShowTree(node.Right);
         }
 
-        private BinaryTree<int> CreateTree()
+        private BinaryTreeSearch<int> CreateTree()
         {
-            var tree = new BinaryTree<int>();
+            var tree = new BinaryTreeSearch<int>();
 
             if (array.Length == 1)
             {
@@ -70,7 +70,7 @@ namespace Chapter04.CreateTreeFromArray
             return tree;
         }
 
-        private void Add(int startIndex, int endIndex, BinaryTree<int> tree)
+        private void Add(int startIndex, int endIndex, BinaryTreeSearch<int> tree)
         {
             if (startIndex == endIndex)
             {
