@@ -24,25 +24,8 @@ namespace Chapter04.CreateTreeFromArray
         {
             Console.WriteLine($"Array: {string.Join(", ", array)}");
             var tree = CreateTree();
-            Console.WriteLine("Binary tree");
-            ShowTree(tree.Root);
-        }
-
-        private void ShowTree(BinaryTreeSearch<int>.Node node)
-        {
-            if (node == null)
-            {
-                return;
-            }
-
-            if (node.Left == null && node.Right == null)
-            {
-                return;
-            }
-
-            Console.WriteLine($"{node.Value}: Left -> {node.Left?.Value} Right -> {node.Right?.Value}");
-            ShowTree(node.Left);
-            ShowTree(node.Right);
+            Console.WriteLine("Binary tree search");
+            tree.Show();
         }
 
         private BinaryTreeSearch<int> CreateTree()

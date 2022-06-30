@@ -62,5 +62,40 @@ namespace Structures
                 }
             }
         }
+
+        public void Show()
+        {
+            Show(root);
+        }
+
+        private void Show(Node node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            if (node.Left == null && node.Right == null)
+            {
+                return;
+            }
+
+            Console.Write($"{node.Value}");
+
+            if (node.Left != null)
+            {
+                Console.Write($" Left -> {node.Left.Value}");
+            }
+
+            if (node.Right != null)
+            {
+                Console.Write($" Right -> {node.Right.Value}");
+            }
+
+            Console.WriteLine();
+
+            Show(node.Left);
+            Show(node.Right);
+        }
     }
 }
