@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Structures;
+using Structures.Interfaces;
 using System;
 using System.Collections.Generic;
 
@@ -18,7 +19,7 @@ namespace Chapter04.CreateListsFromTree
 
         public string GetComment()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Run()
@@ -37,7 +38,7 @@ namespace Chapter04.CreateListsFromTree
             }
         }
 
-        private void CreateLists(List<List<int>> lists, BinaryTreeSearch<int>.Node node, int level)
+        private void CreateLists(List<List<int>> lists, IBinaryTreeNode<int> node, int level)
         {
             if (node == null)
             {

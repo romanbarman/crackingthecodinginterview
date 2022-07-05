@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Structures;
+using Structures.Interfaces;
 using System;
 using System.Collections.Generic;
 
@@ -36,7 +37,7 @@ namespace Chapter04.IsBalancedTree
             return GetHeight(tree.Root) != int.MinValue;
         }
 
-        private int GetHeight(BinaryTreeSearch<int>.Node node)
+        private int GetHeight(IBinaryTreeNode<int> node)
         {
             if (node == null)
             {
