@@ -5,25 +5,14 @@ namespace Structures
 {
     public class BinaryTreeNode<T> : IBinaryTreeNode<T>
     {
+        private IBinaryTreeNode<T> left;
+        private IBinaryTreeNode<T> right;
+        private IBinaryTreeNode<T> parent;
+
         public T Value { get; }
-        public BinaryTreeNode<T> Left { get; set; }
-        public BinaryTreeNode<T> Right { get; set; }
-
-        IBinaryTreeNode<T> IBinaryTreeNode<T>.Left
-        {
-            get
-            {
-                return Left;
-            }
-        }
-
-        IBinaryTreeNode<T> IBinaryTreeNode<T>.Right
-        {
-            get
-            {
-                return Right;
-            }
-        }
+        public IBinaryTreeNode<T> Left => left;
+        public IBinaryTreeNode<T> Right => right;
+        public IBinaryTreeNode<T> Parent => parent;
 
         public BinaryTreeNode(T value)
         {
@@ -35,7 +24,7 @@ namespace Structures
             Show(this);
         }
 
-        private void Show(BinaryTreeNode<T> node)
+        private void Show(IBinaryTreeNode<T> node)
         {
             if (node == null)
             {
@@ -63,6 +52,23 @@ namespace Structures
 
             Show(node.Left);
             Show(node.Right);
+        }
+
+        public void SetLeft(IBinaryTreeNode<T> left)
+        {
+            this.left = left;
+            left.SetParent(this);
+        }
+
+        public void SetRight(IBinaryTreeNode<T> right)
+        {
+            this.right = right;
+            right.SetParent(this);
+        }
+
+        public void SetParent(IBinaryTreeNode<T> parent)
+        {
+            this.parent = parent;
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Structures
 {
     public class BinaryTreeSearch<T> where T : IComparable<T>
     {
-        private BinaryTreeNode<T> root;
+        private IBinaryTreeNode<T> root;
 
         public IBinaryTreeNode<T> Root { get { return root; } }
 
@@ -29,7 +29,7 @@ namespace Structures
                 {
                     if (current.Left == null)
                     {
-                        current.Left = node;
+                        current.SetLeft(node);
                         return;
                     }
                     else
@@ -41,7 +41,7 @@ namespace Structures
 
                 if (current.Right == null)
                 {
-                    current.Right = node;
+                    current.SetRight(node);
                     return;
                 }
                 else

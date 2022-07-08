@@ -41,9 +41,9 @@ namespace Chapter04
         {
             var tree = new BinaryTreeNode<int>(20);
 
-            tree.Left = new BinaryTreeNode<int>(10);
-            tree.Right = new BinaryTreeNode<int>(30);
-            tree.Left.Right = new BinaryTreeNode<int>(25);
+            tree.SetLeft(new BinaryTreeNode<int>(10));
+            tree.SetRight(new BinaryTreeNode<int>(30));
+            tree.Left.SetRight(new BinaryTreeNode<int>(25));
 
             return tree;
         }
