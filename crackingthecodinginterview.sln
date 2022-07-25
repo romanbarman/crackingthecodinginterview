@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch 03. Stack and Queue", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch 04. Trees and Graphs", "Ch 04. Trees and Graphs\Ch 04. Trees and Graphs.csproj", "{D1AE27D5-796D-4F6B-98FC-8BBFDBC4EB7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch 05. Bit Operations", "Ch 05. Bit Operations\Ch 05. Bit Operations.csproj", "{15A4B8E3-2786-475F-B0D6-B5D6E4878D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch 05. Bit Operations", "Ch 05. Bit Operations\Ch 05. Bit Operations.csproj", "{15A4B8E3-2786-475F-B0D6-B5D6E4878D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch 07. OOP", "Ch 07. OOP\Ch 07. OOP.csproj", "{EFA6234A-0E38-4276-9AED-77DD450427D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{15A4B8E3-2786-475F-B0D6-B5D6E4878D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A4B8E3-2786-475F-B0D6-B5D6E4878D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A4B8E3-2786-475F-B0D6-B5D6E4878D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA6234A-0E38-4276-9AED-77DD450427D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA6234A-0E38-4276-9AED-77DD450427D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA6234A-0E38-4276-9AED-77DD450427D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA6234A-0E38-4276-9AED-77DD450427D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
