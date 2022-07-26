@@ -11,6 +11,7 @@
     <ProjectReference Include="..\Ch 03. Stack and Queue\Ch 03. Stack and Queue.csproj" />
     <ProjectReference Include="..\Ch 04. Trees and Graphs\Ch 04. Trees and Graphs.csproj" />
     <ProjectReference Include="..\Ch 05. Bit Operations\Ch 05. Bit Operations.csproj" />
+    <ProjectReference Include="..\Ch 07. OOP\Ch 07. OOP.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
   </ItemGroup>
 

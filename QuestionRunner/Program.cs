@@ -3,6 +3,7 @@ using Chapter02;
 using Chapter03;
 using Chapter04;
 using Chapter05;
+using Chapter07;
 using Contracts;
 using QuestionRunner.Commands;
 using System;
@@ -22,7 +23,8 @@ namespace QuestionRunner
                 new RunChapterCommand(3, "Ch 03. Stack and Queue", typeof(Q3_01_Array_3_Stack)),
                 new RunChapterCommand(4, "Ch 04. Trees and Graphs", typeof(Q4_01_Has_Route)),
                 new RunChapterCommand(5, "Ch 05. Bit Operations", typeof(Q5_01_Insert_Bits)),
-                new ExitCommand(6)
+                new RunChapterCommand(6, "Ch 07. OOP", typeof(Q7_01_Card_Deck)),
+                new ExitCommand(7)
             };
 
             while (true)
