@@ -5,6 +5,7 @@ using Chapter04;
 using Chapter05;
 using Chapter07;
 using Chapter08;
+using Chapter10;
 using Contracts;
 using QuestionRunner.Commands;
 using System;
@@ -26,7 +27,8 @@ namespace QuestionRunner
                 new RunChapterCommand(5, "Ch 05. Bit Operations", typeof(Q5_01_Insert_Bits)),
                 new RunChapterCommand(6, "Ch 07. OOP", typeof(Q7_01_Card_Deck)),
                 new RunChapterCommand(7, "Ch 08. Recursion And Dynamic Programming", typeof(Q8_01_Stairs)),
-                new ExitCommand(8)
+                new RunChapterCommand(8, "Ch 10. Sorting And Searching", typeof(Q10_01_Join_Arrays)),
+                new ExitCommand(9)
             };
 
             while (true)
