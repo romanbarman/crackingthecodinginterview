@@ -13,6 +13,7 @@
     <ProjectReference Include="..\Ch 05. Bit Operations\Ch 05. Bit Operations.csproj" />
     <ProjectReference Include="..\Ch 07. OOP\Ch 07. OOP.csproj" />
     <ProjectReference Include="..\Ch 08. Recursion And Dynamic Programming\Ch 08. Recursion And Dynamic Programming.csproj" />
+    <ProjectReference Include="..\Ch 10. Sorting And Searching\Ch 10. Sorting And Searching.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
   </ItemGroup>
 
